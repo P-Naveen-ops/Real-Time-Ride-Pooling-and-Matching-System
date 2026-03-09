@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Ride Pooling System</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>🚗 Real-Time Ride Pooling System</header>
+
+<div class="container">
+
+<div class="tabButtons">
+
+<button onclick="showRequest()">Request Ride</button>
+<button onclick="showOffer()">Offer Ride</button>
+
+</div>
+
+<!-- REQUEST RIDE -->
+
+<div id="requestSection">
+
+<h2>Request a Ride</h2>
+
+<label>Pickup Location</label>
+<input type="text" id="pickup" placeholder="Enter pickup location">
+
+<label>Destination</label>
+<input type="text" id="destination" placeholder="Enter destination">
+
+<button onclick="findRide()">Find Matching Ride</button>
+
+<div id="result"></div>
+
+</div>
+
+<!-- OFFER RIDE -->
+
+<div id="offerSection" style="display:none;">
+
+<h2>Offer a Ride</h2>
+
+<label>Driver Name</label>
+<input type="text" id="driverName" placeholder="Enter driver name">
+
+<label>Vehicle Number</label>
+<input type="text" id="vehicleNumber" placeholder="Enter vehicle number">
+
+<label>Pickup Location</label>
+<input type="text" id="offerPickup" placeholder="Enter pickup location">
+
+<label>Destination</label>
+<input type="text" id="offerDestination" placeholder="Enter destination">
+
+<button onclick="offerRide()">Offer Ride</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
